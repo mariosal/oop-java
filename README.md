@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [Open Java Development Kit](http://openjdk.java.net/)
 
 ## Compilation
 
@@ -13,7 +13,7 @@ make
 ## Execution
 
 ```sh
-java build/Assign
+java -cp build Assign
 ```
 
 ## Cleaning
