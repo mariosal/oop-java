@@ -13,11 +13,14 @@ class Plane {
     }
 
     Random random = new Random();
-    passengerCompartments = new PassengerCompartment[random.nextInt(capacity) + 1];
+    passengerCompartments = new PassengerCompartment[random.nextInt(capacity)
+                                                     + 1];
     for (int i = 0; i < passengerCompartments.length; ++i) {
-      passengerCompartments[i] = new PassengerCompartment("Passenger Compartment #" + (i + 1));
+      passengerCompartments[i] = new PassengerCompartment(
+          "Passenger Compartment #" + (i + 1));
       if (random.nextInt(2) == 1) {
-        PassengerCompartment inner = new PassengerCompartment("Inner Compartment");
+        PassengerCompartment inner = new PassengerCompartment(
+            "Inner Compartment");
         passengerCompartments[i].setInner(inner);
       }
     }

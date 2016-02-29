@@ -1,7 +1,8 @@
 class CargoBay extends PrivateCompartment {
   CargoBay(String description) {
     super(description);
-    equipmentCompartment = new EquipmentCompartment(description + " - Equipment");
+    equipmentCompartment = new EquipmentCompartment(description
+                                                    + " - Equipment");
   }
 
   @Override void check() {
