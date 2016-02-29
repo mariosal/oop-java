@@ -10,8 +10,8 @@ class CargoBay extends PrivateCompartment {
     System.out.println("Cargo Bay OK!");
   }
   @Override void process(Employee employee) {
-    equipmentCompartment.process(employee);
     super.process(employee);
+    equipmentCompartment.process(employee);
     System.out.println("Cargo Bay Processed!");
   }
 

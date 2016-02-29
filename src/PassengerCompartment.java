@@ -12,10 +12,10 @@ class PassengerCompartment extends PlaneComponent {
     System.out.println("Passenger Compartment OK!");
   }
   @Override void process(Employee employee) {
+    super.process(employee);
     if (inner != null) {
       inner.process(employee);
     }
-    super.process(employee);
     System.out.println("Passenger Compartment Processed!");
   }
 
