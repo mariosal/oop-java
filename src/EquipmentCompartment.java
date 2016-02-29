@@ -8,6 +8,9 @@ class EquipmentCompartment extends PrivateCompartment {
     System.out.println("Equipment Compartment OK!");
   }
   @Override void process(Employee employee) {
+    if (!employee.worksOnEquipmentCompartment()) {
+      return;
+    }
     super.process(employee);
     System.out.println("Equipment Compartment Processed!");
   }

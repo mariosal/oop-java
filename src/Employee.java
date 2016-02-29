@@ -7,6 +7,9 @@ abstract class Employee {
   void work(PlaneComponent planeComponent) {
     this.planeComponent = planeComponent;
   }
+  abstract boolean worksOnCargoBay();
+  abstract boolean worksOnEquipmentCompartment();
+  abstract boolean worksOnPassengerCompartment();
 
   private String name;
   private PlaneComponent planeComponent;

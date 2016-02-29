@@ -9,4 +9,13 @@ class SecurityEmployee extends Employee {
   @Override void work(PlaneComponent planeComponent) {
     super.work(planeComponent);
   }
+  @Override boolean worksOnCargoBay() {
+    return true;
+  }
+  @Override boolean worksOnEquipmentCompartment() {
+    return true;
+  }
+  @Override boolean worksOnPassengerCompartment() {
+    return true;
+  }
 }
