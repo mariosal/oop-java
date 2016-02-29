@@ -8,7 +8,7 @@ class Plane {
     cargoBay = new CargoBay("Cargo Bay #1");
 
     equipmentCompartments = new EquipmentCompartment[3];
-    for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < equipmentCompartments.length; ++i) {
       equipmentCompartments[i] = new EquipmentCompartment("Tech #" + (i + 1));
     }
 
