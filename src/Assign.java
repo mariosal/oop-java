@@ -1,9 +1,9 @@
 class Assign {
   public static void main(String[] args) {
     Plane plane = new Plane("747", "Boeing", 5);
-    CleaningEmployee cleaningEmployee = new CleaningEmployee("");
-    MaintenanceEmployee maintenanceEmployee = new MaintenanceEmployee("");
-    SecurityEmployee securityEmployee = new SecurityEmployee("");
+    CleaningEmployee cleaningEmployee = new CleaningEmployee("Carl");
+    MaintenanceEmployee maintenanceEmployee = new MaintenanceEmployee("Fred");
+    SecurityEmployee securityEmployee = new SecurityEmployee("Vlad");
 
     plane.process(cleaningEmployee);
     cleaningEmployee.report();
