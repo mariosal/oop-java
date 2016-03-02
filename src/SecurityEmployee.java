@@ -6,16 +6,19 @@ class SecurityEmployee extends Employee {
   @Override void report() {
     System.out.println("Security report: Everything OK!");
   }
-  @Override void work(PlaneComponent planeComponent) {
-    super.work(planeComponent);
+  @Override void work(CargoBay cargoBay) {
+    setPlaneComponent(cargoBay);
+    System.out.println("Cargo Bay Processed!");
+    setPlaneComponent(null);
   }
-  @Override boolean worksOnCargoBay() {
-    return true;
+  @Override void work(EquipmentCompartment equipmentCompartment) {
+    setPlaneComponent(equipmentCompartment);
+    System.out.println("Equipment Compartment Processed!");
+    setPlaneComponent(null);
   }
-  @Override boolean worksOnEquipmentCompartment() {
-    return true;
-  }
-  @Override boolean worksOnPassengerCompartment() {
-    return true;
+  @Override void work(PassengerCompartment passengerCompartment) {
+    setPlaneComponent(passengerCompartment);
+    System.out.println("Passenger Compartment Processed!");
+    setPlaneComponent(null);
   }
 }

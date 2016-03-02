@@ -4,9 +4,7 @@ abstract class PlaneComponent {
   }
 
   abstract void check();
-  void process(Employee employee) {
-    employee.work(this);
-  }
+  abstract void process(Employee employee);
 
   String getDescription() {
     return description;

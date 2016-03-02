@@ -5,11 +5,14 @@ abstract class Employee {
 
   abstract void report();
   void work(PlaneComponent planeComponent) {
+  }
+  abstract void work(CargoBay cargoBay);
+  abstract void work(EquipmentCompartment equipmentCompartment);
+  abstract void work(PassengerCompartment passengerCompartment);
+
+  void setPlaneComponent(PlaneComponent planeComponent) {
     this.planeComponent = planeComponent;
   }
-  abstract boolean worksOnCargoBay();
-  abstract boolean worksOnEquipmentCompartment();
-  abstract boolean worksOnPassengerCompartment();
 
   private String name;
   private PlaneComponent planeComponent;
