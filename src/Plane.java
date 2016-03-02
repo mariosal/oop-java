@@ -49,6 +49,25 @@ class Plane {
     System.out.println("Plane Processed!");
   }
 
+  int getCapacity() {
+    return capacity;
+  }
+  CargoBay getCargoBay() {
+    return cargoBay;
+  }
+  String getDescription() {
+    return description;
+  }
+  EquipmentCompartment[] getEquipmentCompartment() {
+    return equipmentCompartments;
+  }
+  String getName() {
+    return name;
+  }
+  PassengerCompartment[] getPassengerCompartments() {
+    return passengerCompartments;
+  }
+
   private int capacity;
   private CargoBay cargoBay;
   private String description;
