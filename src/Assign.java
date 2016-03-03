@@ -1,6 +1,6 @@
 class Assign {
   public static void main(String[] args) {
-    Plane plane = new Plane("747", "Boeing", 5);
+    Plane plane = new Plane("747", "Boeing", 200);
     CleaningEmployee cleaningEmployee = new CleaningEmployee("Carl");
     MaintenanceEmployee maintenanceEmployee = new MaintenanceEmployee("Fred");
     SecurityEmployee securityEmployee = new SecurityEmployee("Vlad");

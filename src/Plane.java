@@ -13,8 +13,8 @@ class Plane {
     }
 
     Random random = new Random();
-    passengerCompartments = new PassengerCompartment[random.nextInt(capacity)
-                                                     + 1];
+    int numPassengerCompartment = random.nextInt(capacity / 100) + 1;
+    passengerCompartments = new PassengerCompartment[numPassengerCompartment];
     for (int i = 0; i < passengerCompartments.length; ++i) {
       passengerCompartments[i] = new PassengerCompartment(
           "Passenger Compartment #" + (i + 1));
