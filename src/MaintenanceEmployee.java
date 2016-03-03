@@ -16,6 +16,4 @@ class MaintenanceEmployee extends Employee {
     System.out.println("Equipment Compartment Processed!");
     setPlaneComponent(null);
   }
-  @Override void work(PassengerCompartment passengerCompartment) {
-  }
 }

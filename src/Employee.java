@@ -1,14 +1,19 @@
 abstract class Employee {
   Employee(String name) {
     this.name = name;
+    this.planeComponent = null;
   }
 
   abstract void report();
-  void work(PlaneComponent planeComponent) {
+  void work(CargoBay cargoBay) {
+    planeComponent = null;
   }
-  abstract void work(CargoBay cargoBay);
-  abstract void work(EquipmentCompartment equipmentCompartment);
-  abstract void work(PassengerCompartment passengerCompartment);
+  void work(EquipmentCompartment equipmentCompartment) {
+    planeComponent = null;
+  }
+  void work(PassengerCompartment passengerCompartment) {
+    planeComponent = null;
+  }
 
   void setPlaneComponent(PlaneComponent planeComponent) {
     this.planeComponent = planeComponent;
