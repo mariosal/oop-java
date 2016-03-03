@@ -5,10 +5,10 @@ class PassengerCompartment extends PlaneComponent {
   }
 
   @Override void check() {
+    System.out.println("Passenger Compartment: " + getDescription());
     if (inner != null) {
       inner.check();
     }
-    System.out.println("Passenger Compartment: " + getDescription());
     System.out.println("Passenger Compartment OK!");
   }
   @Override void process(Employee employee) {

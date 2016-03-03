@@ -6,8 +6,8 @@ class CargoBay extends PrivateCompartment {
   }
 
   @Override void check() {
-    equipmentCompartment.check();
     System.out.println("Cargo Bay: " + getDescription());
+    equipmentCompartment.check();
     System.out.println("Cargo Bay OK!");
   }
   @Override void process(Employee employee) {
