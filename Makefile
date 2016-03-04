@@ -1,4 +1,5 @@
-SRCS = src/CargoBay.java \
+SRCS = src/Assign.java \
+       src/CargoBay.java \
        src/CleaningEmployee.java \
        src/Employee.java \
        src/EquipmentCompartment.java \
@@ -17,5 +18,5 @@ all : build/Assign.class
 clean :
 	$(RM) -r build/*
 
-build/Assign.class: src/Assign.java $(SRCS)
-	$(JC) $(JFLAGS) $<
+build/Assign.class: $(SRCS)
+	$(JC) $(JFLAGS) $^
